@@ -1,0 +1,13 @@
+<section class="container">
+    <div class="d-flex col-12 align-items-center justify-content-center">
+        <div class="row mt-5">
+            <h2>Todolist with Angular</h2>
+            <form (ngSubmit)="addItem()">
+                <div class="input-group my-4">
+                    <input type="text" class="form-control form-control-sm " placeholder="some item" [(ngModel)]="item" name="value">
+                    <button class="btn btn-dark btn-sm" type="submit" id="button-addon2">add</button>
+                  </div>
+            </form>
+        </div>
+    </div>
+</section>

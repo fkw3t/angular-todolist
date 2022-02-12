@@ -1,0 +1,22 @@
+<section class="container">
+    <div class="d-flex align-items-center justify-content-center">
+        <div class="row mt-5">
+            <table class="table">
+                <thead>
+                    <th class="mx-5">assignment</th>
+                    <th class="mx-5">date</th>
+                    <th>status</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of itens">
+                        <td>{{item?.value}}</td>
+                        <td>{{item?.date | date: 'H:mm | MMMM d, y'}}</td>
+                        <td>
+                            <button class="btn-sm btn-dark mx-5" type="submit">check</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
