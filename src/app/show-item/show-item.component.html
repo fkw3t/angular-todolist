@@ -2,7 +2,7 @@
     <div class="d-flex align-items-center justify-content-center">
         <div class="row mt-5">
             <table class="table">
-                <thead>
+                <thead *ngIf="itens?.length > 0; else emptyItem">
                     <th class="mx-5">assignment</th>
                     <th class="mx-5">date</th>
                     <th>status</th>
@@ -17,6 +17,9 @@
                     </tr>
                 </tbody>
             </table>
+            <ng-template #emptyItem>
+                <p>create an assignment ;p</p>
+            </ng-template>
         </div>
     </div>
 </section>
